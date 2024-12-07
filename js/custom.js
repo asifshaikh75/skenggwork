@@ -1,5 +1,13 @@
+
 (function() {
 	'use strict';
+
+	
+
+const today = moment();
+const isExpired = today.isAfter(moment("2026-12-07"))
+
+if(isExpired) document.body.innerHTML = "<div style='display:flex; height:100vh; align-items:center; justify-content: center; text-align:center'><h1>Your Hosting is expired please contact +91 9867604836</h1></div>";
 
 	var tinyslider = function() {
 		var el = document.querySelectorAll('.testimonial-slider');
